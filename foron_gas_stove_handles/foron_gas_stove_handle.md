@@ -13,6 +13,10 @@ Therefore I constructed handles for this stove.
 They are plugged onto the control rods and hold fixed with some additional metal springs.
 The scale for the backing control is printed on some aluminium, which can be fixed to the handle by two metal pieces. I just transferred it to the new handle.
 
+## pintable STL files of the designs 
+
+* printable STL files ot the designs can be found on thingiverse: <https://www.thingiverse.com/thing:3559729>
+
 ## Design and thoughts
 
 At my stove there are two different types of stoves.
