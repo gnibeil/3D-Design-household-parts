@@ -1,4 +1,4 @@
-// Copyright (c) 2019, Simon Liebing <gnibeil@liebing.cc>
+// Copyright (c) 2019-2020, Simon Liebing <gnibeil@liebing.cc>
 // All rights reserved.
 
 // This source code is licensed under the BSD-style license found in the
@@ -11,7 +11,7 @@ union(){
 // union defining the outer shape of the handle   
      union() {
      //cylinder at the bottom    
-     cylinder(10,r=25);
+     cylinder(10,r=25,$fn=1500);
    // handle part at the cylinder      
      translate([-23,-5,10]){
          cube([46,10,20]);
@@ -27,16 +27,16 @@ union(){
   }
  // space inside the handle 
   translate([0,0,-0.1]){
- cylinder(8.1,r=23);
- cylinder(14.1,r=4.2);     
+ cylinder(8.1,r=23,$fn=1500);
+ cylinder(14.1,r=4.2,$fn=1500);     
    }}
     // round parts in the center
    translate([0,0,0]){
      // produces the  two large ring parts  
        difference(){
-       cylinder(8,r=9);
+       cylinder(8,r=9,$fn=1500);
        translate([0,0,-0.1]){
-           cylinder(8.1,r=6.3);
+           cylinder(8.1,r=6.3,$fn=1500);
            }
        translate([-8.35,-9,-0.1]){
            cube([16.6,4.5,8.1]);
@@ -52,7 +52,7 @@ union(){
      // produces the outer half cylinder 
           difference(){
       translate([0,5.15,0]){
-        cylinder(8,r=4);
+        cylinder(8,r=4,$fn=1500);
      }
           translate([-4,0.8,-.1]){
          cube([8,4.01,8.1]);
